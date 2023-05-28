@@ -1,3 +1,8 @@
 [build]
   publish = "output"
   command = "python src/main.py"
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "public"
